@@ -1,8 +1,5 @@
 package main
 
-// QuickFind - Find operation is quick and union is expensive.
-//  Array stores all the top most parent of the object.
-
 // QuickFind ...
 type QuickFind struct {
 	id []int
