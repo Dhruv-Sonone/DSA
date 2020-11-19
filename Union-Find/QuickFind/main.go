@@ -19,15 +19,14 @@ func (qf *QuickFind) Connected(p, q int) bool {
 
 // Union ...
 func (qf *QuickFind) Union(p, q int) {
-	pid := qf.id[p] // parent of p
-	qid := qf.id[q] // parent of q
+	pid := qf.id[p]
+	qid := qf.id[q]
 
 	for index, value := range qf.id {
-		if value == pid { // Set parent as q for all the id where parent is of p
+		if value == pid {
 			qf.id[index] = qid
 		}
 	}
-
 }
 
 // Init - Intialise the parent array as same element
